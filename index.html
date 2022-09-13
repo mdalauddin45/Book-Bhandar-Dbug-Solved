@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5e8f5bcd41.js" crossorigin="anonymous"></script>
+  <title>Book Bhandar</title>
+</head>
+
+<body>
+  <header>
+    <h1 onclick="switchTab( 'container' )">Book Bhandar</h1>
+    <nav>
+      <ul>
+        <li onclick="switchTab( 'wishlist' )">Wishlist</li>
+        <li onclick="switchTab( 'cart' )">Cart</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="books-container" id="container"></div>
+    <div id="wishlist"></div>
+    <div id="cart"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
